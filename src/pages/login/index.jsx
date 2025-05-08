@@ -8,7 +8,7 @@ import { api } from '../../services/api';
 import { useForm } from "react-hook-form";
 
 
-import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
+import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CadastroLink, Row, Wrapper } from './styles';
 
 const Login = () => {
 
@@ -30,7 +30,7 @@ const Login = () => {
 
             alert('Usuário ou senha inválido')
         }catch(e){
-            //TODO: HOUVE UM ERRO
+            alert('Erro ao fazer login, tente novamente')
         }
     };
 
@@ -56,7 +56,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CadastroLink onClick={() => navigate('/cadastro')}>Criar Conta</CadastroLink>
                 </Row>
                 </Wrapper>
             </Column>

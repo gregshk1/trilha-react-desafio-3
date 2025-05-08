@@ -80,3 +80,9 @@ export const CriarText =  styled.p`
 
     color: #23DD7A;
 `
+export const CadastroLink = styled.span`
+  color: #23DD7A;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+`;
